@@ -9,11 +9,11 @@ body {
 }
 
 .navbar {
-    background-color: black;
+    background-color: #222222;
     padding: 1rem;
     position: sticky;
     top: 0;
-    box-shadow: 10px 0px 10px black;
+    box-shadow: 10px 0px 10px #222222;
     z-index: 99;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .logo span{
-    color: blue;
+    color: #0000ff;
 
 }
 
@@ -127,7 +127,7 @@ header {
 }
 
 .header-button-side-right img {
-    width: 115%;
+    width: 100%;
 }
 
 /* Media Queries */
@@ -261,3 +261,35 @@ header {
 .exclusive-container img {
     max-width: 500px;
 }
+
+/* Madia queries */
+
+@media (max-width: 800px) {
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .cols-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-name, .product-priece, .rate {
+        max-width: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    .exclusive-container {
+        flex-direction: column-reverse;
+    }
+
+    .exclusive-container img {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Main Content */
